@@ -9,15 +9,6 @@
     <title>Job Application Form</title>
     <link rel="stylesheet" href="jobapplication-form.css" />
   </head>
-  <head>
-    <!-- Meta tags for character set and viewport settings -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Title of the web page -->
-    <title>Job Application Form</title>
-    <link rel="stylesheet" href="jobapplication-form.css" />
-  </head>
   <body>
     <header>
       <div class="header-container">
@@ -80,29 +71,31 @@
 
         <!-- Form group for Cover Letter field -->
         <div class="form-group">
-          <label for="coverLetter">Cover Letter:</label>
-          <textarea
-            id="coverLetter"
-            name="coverLetter"
-            required
-            pattern="^[^<>]+$"
-          ></textarea>
-          <small>No special characters</small>
-        </div>
+            <label for="coverLetter">Cover Letter:</label>
+            <textarea
+              id="coverLetter"
+              name="coverLetter"
+              required
+              pattern="^[a-zA-Z0-9\s.,'\"?!\-]+$"
+            ></textarea>
+            <small>No special characters</small>
+          </div>
 
         <!-- Form group for Expected Salary field -->
         <div class="form-group">
-          <label for="expectedSalary">Expected Salary:</label>
-          <input
-            type="number"
-            id="expectedSalary"
-            name="expectedSalary"
-            required
-            step="0.01"
-            min="0"
-          />
-          <small>Valid number with up to two decimal places</small>
-        </div>
+            <label for="expectedSalary">Expected Salary (in USD):</label>
+            <input
+              type="number"
+              id="expectedSalary"
+              name="expectedSalary"
+              required
+              step="0.01"
+              min="10"
+              pattern="^\d{2,}(\.\d{1,2})?$"
+              title="Salary should be at least $10.00"
+            />
+            <small>Enter a number with at least 2 digits, e.g., 10.00</small>
+          </div>
 
         <!-- Submit button for the form -->
         <button type="submit">Submit</button>

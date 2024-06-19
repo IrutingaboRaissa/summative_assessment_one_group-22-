@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:rgb(253, 233, 202);
     background-color:bisque;
     margin: 0;
     padding: 0;
@@ -39,7 +38,7 @@ input[type="tel"],
 input[type="url"],
 input[type="number"],
 textarea {
-    width: 100%;
+    width: 98%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -75,7 +74,6 @@ button[type="submit"]:hover {
     text-align: center;
     font-weight: bold;
 }
-
 header {
     background-color: #4CAF50;
     padding: 20px 0;
