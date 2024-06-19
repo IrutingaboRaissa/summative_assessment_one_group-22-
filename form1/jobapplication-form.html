@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
-    <link rel="stylesheet" href="job.css">
+    <link rel="stylesheet" href="jobaaplication-form.css">
 </head>
 <body>
     <div class="container">
         <h1>Job Application Form</h1>
+        <h3 class="success_text">
+             Application submited <span>&#10003;</span> 
+        </h3>
         <form id="applicationForm">
             <div class="form-group">
                 <label for="fullName">Full Name:</label>
@@ -25,8 +28,9 @@
             </div>
             <div class="form-group">
                 <label for="linkedinURL">LinkedIn Profile URL:</label>
-                <input type="url" id="linkedinURL" name="linkedinURL" required pattern="^https:\/\/www\.linkedin\.com\/\w+$">
+                <input type="url" id="linkedinURL" name="linkedinURL" required pattern="^(https?:\/\/)?(www.)?(linkedin.com\/in\/)([a-zA-Z-]{3,100})\/$">
             </div>
+            <!-- </div>^https:\/\/www\.linkedin\.com\/\w+$ -->
             <div class="form-group">
                 <label for="coverLetter">Cover Letter:</label>
                 <textarea id="coverLetter" name="coverLetter" required pattern="^[^<>]+$"></textarea>
@@ -40,5 +44,6 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+    <script src="./jobapplication-form.js"></script>
 </body>
 </html>
