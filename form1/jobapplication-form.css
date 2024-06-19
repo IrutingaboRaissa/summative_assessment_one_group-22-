@@ -1,6 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:rgb(253, 233, 202);
+    background-color:bisque;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -10,6 +13,7 @@ body {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
 }
 
 h1 {
@@ -68,4 +72,21 @@ button[type="submit"]:hover {
 .success_text {
     text-align: center;
     font-weight: bold;
+}
+header {
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.company-name {
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
 }
