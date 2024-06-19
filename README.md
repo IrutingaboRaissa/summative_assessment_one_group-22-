@@ -7,6 +7,12 @@ mobile view
 
 
 
+submitted successful
+<img width="185" alt="image" src="https://github.com/IrutingaboRaissa/summative_assessment_one_group-22-/assets/75057200/e2ddc91b-00db-40ee-a33d-b9e96005a4ce">
+
+
+
+
 Desktop view
 <img width="589" alt="image" src="https://github.com/IrutingaboRaissa/summative_assessment_one_group-22-/assets/75057200/f3cc5e81-8cdf-4b6a-af12-ab95dde3d8ef">
 
