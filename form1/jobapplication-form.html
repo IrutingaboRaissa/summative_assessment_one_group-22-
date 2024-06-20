@@ -1,72 +1,204 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <!-- Meta tags for character set and viewport settings -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Title of the web page -->
     <title>Job Application Form</title>
-    <link rel="stylesheet" href="jobapplication-form.css">
-</head>
-<body>
+    <link rel="stylesheet" href="jobapplication-form.css" />
+  </head>
+  <body>
     <!-- Container for the form content -->
     <div class="container">
-        <!-- Main heading of the form -->
-        <h1>Job Application Form</h1>
-        
-        <!-- Success message displayed after form submission -->
-        <h3 class="success_text">
-             Application submitted <span>&#10003;</span> 
-        </h3>
-        
-        <!-- Job application form -->
-        <form id="applicationForm">
-            <!-- Form group for Full Name field -->
-            <div class="form-group">
-                <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required pattern="^[a-zA-Z\s]+$">
-                <small>Letters and spaces only</small>
-            </div>
-            
-            <!-- Form group for Email field -->
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <!-- Form group for Phone Number field -->
-            <div class="form-group">
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="tel" id="phoneNumber" name="phoneNumber" required pattern="^\d{3}-\d{3}-\d{4}$" placeholder="123-456-7890">
-            </div>
-            
-            <!-- Form group for LinkedIn Profile URL field -->
-            <div class="form-group">
-                <label for="linkedinURL">LinkedIn Profile URL:</label>
-                <input type="url" id="linkedinURL" name="linkedinURL" required pattern="^(https?:\/\/)?(www.)?(linkedin.com\/in\/)([a-zA-Z-]{3,100})\/$">
-            </div>
-            
-            <!-- Form group for Cover Letter field -->
-            <div class="form-group">
-                <label for="coverLetter">Cover Letter:</label>
-                <textarea id="coverLetter" name="coverLetter" required pattern="^[^<>]+$"></textarea>
-                <!-- <small>No special characters</small> -->
-            </div>
-            
-            <!-- Form group for Expected Salary field -->
-            <div class="form-group">
-                <label for="expectedSalary">Expected Salary:</label>
-                <input type="number" id="expectedSalary" name="expectedSalary" required step="0.01" min="0">
-                <small>Valid number with up to two decimal places</small>
-            </div>
-            
-            <!-- Submit button for the form -->
-            <button type="submit">Submit</button>
-        </form>
+      <!-- Main heading of the form -->
+      <h1>Job Application Form</h1>
+
+      <!-- Success message displayed after form submission -->
+      <h3 class="success_text">Application submitted <span>&#10003;</span></h3>
+
+      <!-- Job application form -->
+      <form id="applicationForm">
+        <!-- Form group for Full Name field -->
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            pattern="^[a-zA-Z\s]+$"
+          />
+          <small>Letters and spaces only</small>
+        </div>
+
+        <!-- Form group for Email field -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <!-- Form group for Phone Number field -->
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number:</label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            required
+            pattern="^\d{3}-\d{3}-\d{4}$"
+            placeholder="123-456-7890"
+          />
+        </div>
+
+        <!-- Form group for LinkedIn Profile URL field -->
+        <div class="form-group">
+          <label for="linkedinURL">LinkedIn Profile URL:</label>
+          <input
+            type="url"
+            id="linkedinURL"
+            name="linkedinURL"
+            required
+            pattern="^(https?:\/\/)?(www.)?(linkedin.com\/in\/)([a-zA-Z-]{3,100})\/$"
+          />
+        </div>
+
+        <!-- Form group for Cover Letter field -->
+        <div class="form-group">
+          <label for="coverLetter">Cover Letter:</label>
+          <textarea
+            id="coverLetter"
+            name="coverLetter"
+            required
+            pattern="^[^<>]+$"
+          ></textarea>
+          <!-- <small>No special characters</small> -->
+        </div>
+
+        <!-- Form group for Expected Salary field -->
+        <div class="form-group">
+          <label for="expectedSalary">Expected Salary:</label>
+          <input
+            type="number"
+            id="expectedSalary"
+            name="expectedSalary"
+            required
+            step="0.01"
+            min="0"
+          />
+          <small>Valid number with up to two decimal places</small>
+        </div>
+
+        <!-- Submit button for the form -->
+        <button type="submit">Submit</button>
+      </form>
     </div>
-    
+
     <!-- Link to external JavaScript file for form handling -->
     <script src="./jobapplication-form.js"></script>
-</body>
+  </body>
+  <head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the web page -->
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="jobapplication-form.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1 class="company-name">E-JOB</h1>
+      </div>
+    </header>
+    <!-- Container for the form content -->
+    <div class="container">
+      <!-- Main heading of the form -->
+      <h1>Job Application Form</h1>
+
+      <!-- Success message displayed after form submission -->
+      <h3 class="success_text">Application submitted <span>&#10003;</span></h3>
+
+      <!-- Job application form -->
+      <form id="applicationForm">
+        <!-- Form group for Full Name field -->
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            pattern="^[a-zA-Z\s]+$"
+          />
+          <small>Letters and spaces only</small>
+        </div>
+
+        <!-- Form group for Email field -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <!-- Form group for Phone Number field -->
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number:</label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            required
+            pattern="^\d{3}-\d{3}-\d{4}$"
+            placeholder="123-456-7890"
+          />
+        </div>
+
+        <!-- Form group for LinkedIn Profile URL field -->
+        <div class="form-group">
+          <label for="linkedinURL">LinkedIn Profile URL:</label>
+          <input
+            type="url"
+            id="linkedinURL"
+            name="linkedinURL"
+            required
+            pattern="^(https?:\/\/)?(www.)?(linkedin.com\/in\/)([a-zA-Z-]{3,100})\/$"
+          />
+        </div>
+
+        <!-- Form group for Cover Letter field -->
+        <div class="form-group">
+          <label for="coverLetter">Cover Letter:</label>
+          <textarea
+            id="coverLetter"
+            name="coverLetter"
+            required
+            pattern="^[^<>]+$"
+          ></textarea>
+          <small>No special characters</small>
+        </div>
+
+        <!-- Form group for Expected Salary field -->
+        <div class="form-group">
+          <label for="expectedSalary">Expected Salary:</label>
+          <input
+            type="number"
+            id="expectedSalary"
+            name="expectedSalary"
+            required
+            step="0.01"
+            min="0"
+          />
+          <small>Valid number with up to two decimal places</small>
+        </div>
+
+        <!-- Submit button for the form -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Link to external JavaScript file for form handling -->
+    <script src="./jobapplication-form.js"></script>
+  </body>
 </html>
