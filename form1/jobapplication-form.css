@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:bisque;
+    background-color:rgb(253, 233, 202);
 }
 
 .container {
@@ -33,7 +33,7 @@ input[type="tel"],
 input[type="url"],
 input[type="number"],
 textarea {
-    width: 98%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -56,4 +56,17 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: turquoise;
+}
+
+.success_text {
+    display: none;
+    color: #4CAF50;
+}
+.success_text.show {
+    display: block;
+
+}
+.success_text {
+    text-align: center;
+    font-weight: bold;
 }
